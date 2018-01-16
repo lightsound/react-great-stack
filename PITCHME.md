@@ -1,6 +1,6 @@
 # ぼくのかんがえた さいきょうの react
 
-島袋
+**島袋**
 
 ---
 
@@ -72,7 +72,7 @@ eslint の設定とのコンフリクト回避
 
 ---
 
-package.json 内をフォーマットできる
+package.json 内をフォーマットできる  
 precommit 時に prettier と同時に走らせている
 
 ---

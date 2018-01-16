@@ -1,0 +1,14 @@
+#開発モードか（スライドを作り終えたらtrueにする）
+published : true
+
+#最後のページ後、最初のページにループさせるか
+loop : true
+
+#フットノートの設定
+footnote : "meguro.es@2018-01-25"
+
+#スライドのページ数表示の設定
+slide-number: true
+
+#センター表示させるか
+vertical-center : false
