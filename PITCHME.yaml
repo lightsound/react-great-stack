@@ -1,8 +1,8 @@
 #開発モードか（スライドを作り終えたらtrueにする）
-published : true
+published : false
 
 #最後のページ後、最初のページにループさせるか
-loop : true
+loop : false
 
 #フットノートの設定
 footnote : "meguro.es@2018-01-25"
@@ -11,4 +11,4 @@ footnote : "meguro.es@2018-01-25"
 slide-number: true
 
 #センター表示させるか
-vertical-center : false
+vertical-center : true
