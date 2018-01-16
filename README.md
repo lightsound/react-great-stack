@@ -1,2 +1,0 @@
-# react-great-stack
-ぼくのかんがえたさいきょうのreact
