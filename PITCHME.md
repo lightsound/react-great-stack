@@ -1,6 +1,6 @@
 ## ぼくのかんがえた
 
-## さいきょうの react
+## さいきょうの React
 
 ---
 
@@ -52,7 +52,7 @@ react 固有でないやつも紹介する
 
 問: eslint --fix でよくね？
 
-答: eslint で強制できない項目もできる
+答: prettier でしか整形できない項目もある
 
 +++
 
@@ -82,18 +82,15 @@ max-len だけでなく色々設定できる
 
 +++
 
-json や markdown も整形できる
+eslint と設定が被るのでは？
+
+（例）  
+eslint は max-len:100  
+prettier は max-len:80
 
 +++
 
-最近 [ver1.0.0 がリリース](https://prettier.io/blog/2018/01/10/1.10.0.html#support-for-vue-single-file-components-3563-by-vjeux)され  
-vue の単一ファイルにも対応した
-
-+++
-
-eslint と併用するには？
-
-+++
+解としては下記ライブラリを使う
 
 [prettier-eslint](https://github.com/prettier/prettier-eslint)  
 prettier 後に eslint --fix を行う
@@ -123,6 +120,15 @@ tslint もまったく同じことができる
 [tslint-plugin-prettier](https://github.com/ikatyang/tslint-plugin-prettier)
 
 [tslint-config-prettier](https://github.com/alexjoverm/tslint-config-prettier)
+
++++
+
+ちなみに json や markdown も整形可
+
++++
+
+最近 [ver1.0.0 がリリース](https://prettier.io/blog/2018/01/10/1.10.0.html#support-for-vue-single-file-components-3563-by-vjeux)され  
+vue の単一ファイルにも対応した
 
 +++
 
