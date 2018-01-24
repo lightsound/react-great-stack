@@ -90,8 +90,6 @@ prettier は max-len:80
 
 +++
 
-解としては下記ライブラリを使う
-
 [prettier-eslint](https://github.com/prettier/prettier-eslint)  
 prettier 後に eslint --fix を行う
 
@@ -442,8 +440,7 @@ export default {
 
 +++
 
-DidMount での fetch が減る(SFC が増える)  
-非同期処理の 80%ぐらいはこれで解決できるとか
+DidMount での fetch が減る(SFC が増える)
 
 +++
 
