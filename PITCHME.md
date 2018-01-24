@@ -1,10 +1,10 @@
-# ぼくのかんがえた さいきょうの react
-
-**島袋**
+### ぼくのかんがえたさいきょうの react
 
 ---
 
 ## 自己紹介
+
+**光音 ([@bboykoto](https://twitter.com/bboykoto))**
 
 * 某Ｙ社のフロントエンドエンジニア
 
@@ -57,12 +57,8 @@ eslint はアラートを出すだけ
 
 ```javascript
 // prettier前
-foo(
-  reallyLongArg(),
-  omgSoManyParameters(),
-  IShouldRefactorThis(),
-  isThereSeriouslyAnotherOne()
-);
+// prettier-ignore
+foo(reallyLongArg(), omgSoManyParameters(), IShouldRefactorThis(), isThereSeriouslyAnotherOne());
 ```
 
 ```javascript
@@ -86,7 +82,7 @@ json や markdown も整形できる
 
 +++
 
-最近 ver1.0.0 がリリースされ  
+最近 [ver1.0.0 がリリース](https://prettier.io/blog/2018/01/10/1.10.0.html#support-for-vue-single-file-components-3563-by-vjeux)され  
 vue の単一ファイルにも対応した
 
 +++
@@ -283,8 +279,8 @@ const mapStateToProps = state => {
 };
 ```
 
-@[4-7](inputSelectors)
-@[8-17](resultFunc)
+@[4](inputSelectors)
+@[5-14](resultFunc)
 
 +++
 
@@ -295,10 +291,7 @@ inputSelectors で
 
 +++
 
-normalizr との相性が抜群
-
-+++
-
+normalizr との相性が抜群  
 redux 公式にも書いてあるから使おう
 
 ---
@@ -351,13 +344,12 @@ SFC が多くなるのでテストも容易に
 
 +++
 
-state に限らず  
-lifecycle などの  
-便利関数もある
+state に限らず lifecycle などもある
 
 +++
 
-HOC の可読性が上がる
+HOC の可読性が上がる  
+便利なのいっぱいあるから使おう
 
 ---
 
@@ -440,7 +432,7 @@ export default {
 
 +++
 
-componentDidMount での fetch が減る(SFC が増える)  
+DidMount での fetch が減る(SFC が増える)  
 非同期処理の 80%ぐらいはこれで解決できるとか
 
 +++
@@ -464,12 +456,12 @@ m(\_\_)m
 
 普通の JS の取り回しで  
 Immutable なオブジェクトを生成できるライブラリ  
-MobX 作者がつくっている
+（MobX 作者がつくっている）
 
 +++
 
-ImmutableJS みたいに重くない  
-（独特の記法は特に無い）
+ImmutableJS みたいに  
+独特の記法を覚えまくる必要はない
 
 +++
 
@@ -538,7 +530,8 @@ const byId = (state, action) =>
 
 +++
 
-神
+神！  
+使おう
 
 ---
 
