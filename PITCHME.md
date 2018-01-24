@@ -1,10 +1,10 @@
-### ぼくのかんがえたさいきょうの react
+#### ぼくのかんがえたさいきょうの react
 
 ---
 
 ## 自己紹介
 
-**光音 ([@bboykoto](https://twitter.com/bboykoto))**
+### 光音 ([@bboykoto](https://twitter.com/bboykoto))
 
 * 某Ｙ社のフロントエンドエンジニア
 
@@ -40,6 +40,8 @@ react 固有でないやつも紹介する
 ---
 
 ## prettier
+
++++
 
 コードフォーマッター  
 エディタ連携して保存時に発動させると最強
@@ -450,7 +452,7 @@ m(\_\_)m
 
 ---
 
-## Immer
+## immer
 
 +++
 
@@ -512,7 +514,7 @@ const byId = (state, action) => {
 
 +++
 
-Immer
+immer
 
 ```javascript
 import produce from "immer";
@@ -530,7 +532,6 @@ const byId = (state, action) =>
 
 +++
 
-神！  
 使おう
 
 ---
