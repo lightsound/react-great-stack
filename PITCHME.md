@@ -362,7 +362,7 @@ HOC の可読性が上がる
 +++
 
 ルーティングライブラリ  
-![Logo](assets/redux-first-router.png)
+![Logo](assets/img/redux-first-router.png)
 
 +++
 
@@ -443,7 +443,7 @@ DidMount での fetch が減る(SFC が増える)
 
 routeMap が肥大化しそうなので  
 ディレクトリ構造はこんな感じにしている  
-![Logo](assets/my-routes-directory.png)
+![Logo](assets/img/my-routes-directory.png)
 
 +++
 

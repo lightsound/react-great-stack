@@ -1,6 +1,9 @@
 #開発モードか（スライドを作り終えたらtrueにする）
 published : false
 
+# カスタムcss
+theme-override : assets/css/style.css
+
 #最後のページ後、最初のページにループさせるか
 loop : false
 
