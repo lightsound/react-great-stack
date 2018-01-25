@@ -259,6 +259,8 @@ const mapStateToProps = state => {
 
 +++
 
+reselect
+
 ```javascript
 import { createSelector } from "reselect";
 
