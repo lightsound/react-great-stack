@@ -154,7 +154,7 @@ normalizr で JSON データを
 
 normalizr 前
 
-```javascript
+```json
 {
   "id": "123",
   "author": {
@@ -224,7 +224,7 @@ author と commenter も同じ user のはず
 
 [Redux 公式](https://redux.js.org/docs/recipes/reducers/NormalizingStateShape.html)にも書いてある
 
-> The Normalizr library is usually used
+> data needs to be transformed into a normalized shape before it can be included in the state tree. The Normalizr library is usually used for this task.
 
 ---
 
@@ -253,19 +253,9 @@ const mapStateToProps = state => {
 };
 ```
 
-+++
-
-関係ない state の更新のたびに  
-getVisibleTodos()が走るのは良くない
-
-+++
-
-View が state の構造を知る必要があるのも Bad
-
-+++
-
-使い回しが難しくなるため  
-ロジックを View に持たせたくない
+@[12-16](<getVisibleTodos()が何度も...>)
+@[14](View が state を指定するのも...)
+@[1-10](ロジックを View に持たせたくない)
 
 +++
 
@@ -309,7 +299,7 @@ normalizr との相性が抜群
 
 +++
 
-こちらも[redux 公式](https://redux.js.org/docs/recipes/ComputingDerivedData.html)に書いてある
+reselect も[redux 公式](https://redux.js.org/docs/recipes/ComputingDerivedData.html)に書いてある
 
 > Reselect selectors can be used to efficiently compute derived data from the Redux store.
 
