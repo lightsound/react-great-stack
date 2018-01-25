@@ -253,7 +253,7 @@ const mapStateToProps = state => {
 };
 ```
 
-@[12-16](<getVisibleTodos()が何度も...>)
+@[12-16](getVisibleTodos が何度も...>)
 @[14](View が state を指定するのも...)
 @[1-10](ロジックを View に持たせたくない)
 
@@ -491,6 +491,8 @@ const nextState = produce(baseState, draftState => {
   draftState[1].done = true;
 });
 ```
+
+@[14-17](この部分が Immer)
 
 +++
 
