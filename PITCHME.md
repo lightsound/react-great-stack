@@ -6,7 +6,7 @@
 
 ## 自己紹介
 
-### 光音 ([@bboykoto](https://twitter.com/bboykoto))
+### 光音 [@bboykoto](https://twitter.com/bboykoto)
 
 * 某Ｙ社のフロントエンドエンジニア
 
@@ -141,7 +141,7 @@ vue の単一ファイルにも対応した
 
 +++
 
-公式和訳
+normalizr 公式訳
 
 > 多くの API は深くネストされた JSON データを返す。このような構造は、JavaScript アプリケーション、特に Flux または Redux を使用するときによく問題となる。
 
@@ -154,7 +154,7 @@ normalizr で JSON データを
 
 normalizr 前
 
-```json
+```javascript
 {
   "id": "123",
   "author": {
@@ -178,7 +178,7 @@ normalizr 前
 
 normalizr 後
 
-```json
+```javascript
 {
   result: "123",
   entities: {
@@ -201,15 +201,12 @@ normalizr 後
 }
 ```
 
-+++
-
-result: 参照用 ID だけをもった配列  
-entities: データを保持するオブジェクト
+@[2](result: 参照用 ID だけをもった配列)
+@[3-19](entities: データを保持するオブジェクト)
 
 +++
 
-result と entities は分けて  
-store に格納する
+result と entities は分けて store に格納
 
 +++
 
@@ -218,7 +215,16 @@ author と commenter も同じ user のはず
 
 +++
 
-データに参照しやすくなる
+正規化すると
+
+* 無駄なネストが少なくなる
+* データに参照しやすくなる
+
++++
+
+[Redux 公式](https://redux.js.org/docs/recipes/reducers/NormalizingStateShape.html)にも書いてある
+
+> The Normalizr library is usually used
 
 ---
 
@@ -294,13 +300,18 @@ const mapStateToProps = state => {
 
 inputSelectors で  
 指定した state の更新時以外は  
-前回の内容を返してくれる  
-(Memoized Selector)
+計算せずに前回の内容を返す  
+(Memoized)
 
 +++
 
-normalizr との相性が抜群  
-redux 公式にも書いてあるから使おう
+normalizr との相性が抜群
+
++++
+
+こちらも[redux 公式](https://redux.js.org/docs/recipes/ComputingDerivedData.html)に書いてある
+
+> Reselect selectors can be used to efficiently compute derived data from the Redux store.
 
 ---
 
@@ -312,7 +323,7 @@ SFC や HOC が使いやすくなる
 
 +++
 
-公式和訳
+recompose 公式訳
 
 > React 版 lodash と考えて
 
@@ -347,17 +358,14 @@ export default Enhance(App);
 
 +++
 
-view からロジックが消えていく  
-SFC が多くなるのでテストも容易に
+* view からロジックが消えていく
+* SFC が多くなるのでテストも容易に
+* state に限らず lifecycle などもある
 
 +++
 
-state に限らず lifecycle などもある
-
-+++
-
-HOC の可読性が上がる  
-便利なのいっぱいあるから使おう
+HOC の可読性が上がる！  
+便利な関数がたくさんある！
 
 ---
 
@@ -397,12 +405,12 @@ const mapDispatchToProps = (dispatch) => ({
 
 +++
 
-URL からでも action 発行からでも  
+URL や action 発行で  
 ルーティングを変更することが可能
 
 +++
 
-遷移前後に処理を追加することもできる
+ページ遷移前後に処理が追加できる
 
 ```javascript
 // configureStore.js
@@ -494,7 +502,7 @@ const nextState = produce(baseState, draftState => {
 
 +++
 
-あれ、reducer めっちゃ簡素にできね？
+reducer をめっちゃ簡素にできる
 
 +++
 
